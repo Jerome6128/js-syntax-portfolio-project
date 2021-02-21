@@ -7,3 +7,6 @@ const actions = ['has written', 'has sailed to', 'has painted', 'has met', 'has 
 //Define a list of objects
 const objects = ['Bonne idée', 'America', 'Mona Lisa', 'God', 'radioactivity', 'playboy'];
 
+const randomMessage = () => artists[Math.floor(Math.random() * artists.length)] + ' ' + actions[Math.floor(Math.random() * actions.length)] + ' ' +  objects[Math.floor(Math.random() * objects.length)] + '.';
+
+console.log(randomMessage());
